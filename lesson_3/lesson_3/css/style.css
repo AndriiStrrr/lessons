@@ -1,0 +1,41 @@
+@import url(reset.css);
+
+.header_title {
+  color: blue;
+}
+
+#menu-list1 {
+  color: aqua;
+}
+
+#menu-list2 {
+  color: blueviolet;
+}
+
+.mainblock_content-text span {
+  color: red;
+}
+
+.game_process-text span {
+  color: red;
+}
+
+#section-6 {
+  color: aquamarine;
+}
+
+.story-text > p {
+  color: darkblue;
+}
+
+.game_process-text {
+  color: cadetblue;
+}
+
+.story-block2 p {
+  color: darkgoldenrod;
+}
+
+.footer {
+  color: yellowgreen;
+}
