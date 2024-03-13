@@ -11,7 +11,9 @@
 #menu-list2 {
   color: blueviolet;
 }
-
+.mainblock_content > div {
+  color: olive;
+}
 .mainblock_content-text span {
   color: red;
 }
@@ -28,9 +30,16 @@
   color: darkblue;
 }
 
-.game_process-text {
+.game_process-text p {
   color: cadetblue;
 }
+.game_process-text ul {
+  color: blue;
+}
+p.text-red {
+  color: red;
+}
+/* .game_process-text  */
 
 .story-block2 p {
   color: darkgoldenrod;
@@ -39,3 +48,27 @@
 .footer {
   color: yellowgreen;
 }
+
+.footer-content a {
+  color: blue;
+}
+
+#section-4 {
+  color: chartreuse;
+}
+
+.story-text a {
+  color: red;
+}
+
+#section-1,
+#section-2,
+#section-3,
+#section-4,
+#section-5,
+#section-6 {
+  color: yellowgreen;
+}
+/* > p {
+  color: seagreen;
+} */
