@@ -51,6 +51,10 @@
   line-height: 155.555556%; /* 28/18 */
 }
 
+.gameplay-block h2 {
+  white-space: nowrap;
+}
+
 h2 {
   text-align: center;
 }
