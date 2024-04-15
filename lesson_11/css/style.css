@@ -24,7 +24,7 @@ h1 {
   max-width: 240px;
 }
 
-.block__title {
+.title {
   font-size: 30px;
   text-align: center;
 }
@@ -86,20 +86,18 @@ h2 {
   opacity: 50%;
 }
 
-.block3d--rotate-3d:hover .block3d__item {
+.block3d__border:hover .block3d__item {
   /* transform: rotateX(65deg); */
   transform: rotate3d(50, 0, 0, 30deg);
 }
 
-.block3d--translate-3d:hover .block3d__item {
+.block3d__border:hover .block3d__item {
   transform: translate3d(25px, 40px, 80px);
 }
-.block3d--tranform-3d:hover .block3d__item {
+.block3d__border:hover .block3d__item {
   transform: translate3d(20px, 50px, 120px);
 }
 
-.card {
-}
 .card__body {
   position: relative;
   width: 300px;
