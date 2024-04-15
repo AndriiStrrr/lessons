@@ -1,0 +1,245 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+
+.header {
+  padding: 20px 0;
+  background-color: aqua;
+}
+h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.page__container {
+  padding: 100px 0;
+}
+.block {
+  display: inline-block;
+  padding: 15px;
+  max-width: 240px;
+}
+
+.block__title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.block__border {
+  background-color: rgb(129, 238, 35);
+  padding: 5px;
+}
+
+.block__item {
+  height: 200px;
+  width: 200px;
+  background-color: #edf508;
+  opacity: 50%;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.block--translate:hover .block__item {
+  transform: translateX(45px);
+}
+.block--scale:hover .block__item {
+  transform: scale(1.1);
+}
+.block--rotate:hover .block__item {
+  transform: rotate(60deg);
+}
+.block--skew:hover .block__item {
+  transform: skew(-40deg, 25deg);
+}
+.block--matrix:hover .block__item {
+  transform: translate(40px, 35px) scale(0.7) rotate(-60deg) skew(-30deg);
+}
+.block--transform:hover .block__item {
+  transform-origin: top;
+  transform: rotate(38deg);
+}
+
+.block3d {
+  perspective: 400px;
+  perspective-origin: center;
+  transform-style: preserve-3d;
+  display: inline-block;
+  padding: 15px;
+  max-width: 240px;
+}
+
+.block3d__border {
+  background-color: rgb(238, 35, 35);
+  padding: 5px;
+}
+.block3d__item {
+  height: 200px;
+  width: 200px;
+  background-color: #5b42e9;
+  opacity: 50%;
+}
+
+.block3d--rotate-3d:hover .block3d__item {
+  /* transform: rotateX(65deg); */
+  transform: rotate3d(50, 0, 0, 30deg);
+}
+
+.block3d--translate-3d:hover .block3d__item {
+  transform: translate3d(25px, 40px, 80px);
+}
+.block3d--tranform-3d:hover .block3d__item {
+  transform: translate3d(20px, 50px, 120px);
+}
+
+.card {
+}
+.card__body {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  perspective: 800px;
+}
+.card__body img {
+  width: 100%;
+}
+.card__front,
+.card__back {
+  transition: all 0.5s;
+}
+.card__front {
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+}
+.card__back {
+  transform: rotateX(0deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card__body:hover .card__front {
+  transform: rotateX(0deg);
+}
+.card__body:hover .card__back {
+  transform: rotateX(-180deg);
+}
+
+.car {
+  position: relative;
+  padding: 200px 0;
+  background-color: cadetblue;
+  z-index: -2;
+}
+
+.car__body {
+  border-radius: 45% 90% 45% 35% / 13% 81% 18% 34%;
+  background-color: red;
+  width: 600px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.car__body::after {
+  content: "";
+  width: 150px;
+  height: 100px;
+  border: 1px solid #000;
+  background-color: red;
+  position: absolute;
+  bottom: 80%;
+  right: 90%;
+  transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);
+  z-index: -1;
+}
+
+.car__roof {
+  border-radius: 69% 32% 70% 0% / 100% 100% 0% 0%;
+  width: 250px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  bottom: 75%;
+  left: 20%;
+}
+
+.car__headlight {
+  border-radius: 83% 28% 50% 59% / 56% 100% 0% 57%;
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  position: absolute;
+  top: 75px;
+  right: 10px;
+  background-color: #e3ea11b6;
+}
+.wheel {
+  width: 130px;
+  border-radius: 50%;
+}
+
+.car__wheel {
+  position: absolute;
+  bottom: -45px;
+  left: 12%;
+  width: 150px;
+}
+
+.car__wheel2 {
+  position: absolute;
+  bottom: -45px;
+  right: 10%;
+}
+.wheel img {
+  width: 100%;
+}
+
+.car__eye {
+  width: 150px;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: rotateY(40deg);
+}
+
+.car__eye img {
+  width: 100%;
+}
+
+.car__logo {
+  width: 500px;
+
+  position: absolute;
+  top: -45px;
+  left: 0;
+  transform: rotate(-8deg);
+  z-index: 3;
+}
+.car__logo img {
+  width: 100%;
+}
+
+.car p {
+  padding: 40px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  color: brown;
+}
+
+.footer {
+  padding: 20px 0;
+  background-color: blueviolet;
+}
+.footer p {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  color: red;
+}
