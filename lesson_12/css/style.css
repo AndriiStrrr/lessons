@@ -146,6 +146,8 @@ h1 {
   animation-duration: 3s;
   animation-delay: 6s;
   animation-fill-mode: forwards;
+  opacity: 0.6;
+  border-radius: 81% 19% 70% 30% / 30% 74% 26% 70%;
 }
 
 .car__body:hover:before {
