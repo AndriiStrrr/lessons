@@ -124,14 +124,14 @@ body {
   position: relative;
   font-size: 13px;
   font-weight: 300;
-  line-height: 22/13;
+  line-height: 169.230769%; /* 22/13 */
   padding-left: 40px;
 }
 .catalog__number a {
   color: #2b2929;
   font-size: 20px;
   font-weight: 600;
-  line-height: 28/10;
+  line-height: 280%; /* 28/10 */
 }
 
 .catalog__number::before {
