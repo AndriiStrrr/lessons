@@ -188,6 +188,9 @@ body {
   color: #2b2929;
   line-height: 1.2; /* 48/40 */
   font-weight: 600;
+}
+
+.popular__title {
   margin-bottom: 55px;
 }
 
@@ -251,6 +254,10 @@ body {
 .most-popular {
   background: rgb(248, 248, 248);
   padding: 20px 0;
+}
+
+.most-popular__title {
+  margin-bottom: 55px;
 }
 
 .most-popular__items {
@@ -398,6 +405,10 @@ body {
 
 .sale {
   padding: 20px 0;
+}
+
+.sale__title {
+  margin-bottom: 55px;
 }
 
 .sale__row {
