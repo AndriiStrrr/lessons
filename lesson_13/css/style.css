@@ -131,7 +131,6 @@ body {
   color: #2b2929;
   font-size: 20px;
   font-weight: 600;
-  line-height: 280%; /* 28/10 */
 }
 
 .catalog__number::before {
@@ -200,14 +199,18 @@ body {
 }
 
 .item-popular {
+  flex: 0 1 250px;
   position: relative;
   background-color: #fff;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: -3px 4px 15px 0 rgba(0, 0, 0, 0.06);
+  transition-duration: 0.5s;
 }
 .item-popular:hover {
   transform: scale(1.1);
+  transition-duration: 1s;
+  z-index: 2;
 }
 
 .item-popular__name {
@@ -245,14 +248,15 @@ body {
 
 /* most-popular */
 
+.most-popular {
+  background: rgb(248, 248, 248);
+  padding: 20px 0;
+}
+
 .most-popular__items {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 70px;
-}
-
-.most-popular__title {
 }
 
 .most-popular__title a {
@@ -279,22 +283,27 @@ body {
 .item-most-popular {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  background-color: #fff;
+  flex-grow: 1;
+  flex-basis: 300px;
   padding: 20px;
   row-gap: 20px;
   border-radius: 8px;
   box-shadow: -3px 4px 15px 0 rgba(0, 0, 0, 0.06);
+  transition-duration: 0.5s;
 }
 
 .item-most-popular:hover {
   transform: scale(1.1);
+  transition-duration: 1s;
+  z-index: 2;
 }
 
-.most-popular__body {
-  max-width: 260px;
+.item-most-popular__body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  row-gap: 10px;
 }
 
 .item-most-popular__size {
@@ -342,12 +351,11 @@ body {
   align-items: center;
 }
 
-.most-popular__body p:not(:last-child) {
-  margin-bottom: 10px;
-}
-
 .item-most-popular__img {
-  max-width: 260px;
+  /* max-width: 250px; */
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 250px;
   overflow: hidden;
   border-radius: 8px;
 }
@@ -360,6 +368,7 @@ body {
 
 .sale {
   padding-bottom: 70px;
+  background: rgb(248, 248, 248);
 }
 
 .sale__title {
@@ -387,6 +396,10 @@ body {
   background: url("../img/main/most-popular/arrow.svg") 0 0 no-repeat;
 }
 
+.sale {
+  padding: 20px 0;
+}
+
 .sale__row {
   display: flex;
   column-gap: 30px;
@@ -396,10 +409,12 @@ body {
   max-width: 410px;
   border-radius: 8px;
   overflow: hidden;
+  transition-duration: 0.5s;
 }
 
 .sale__img:hover {
   transform: scale(1.1);
+  transition-duration: 1s;
 }
 
 .sale__img img {
@@ -416,7 +431,7 @@ body {
   line-height: 146.666667%; /* 22/15 */
 }
 
-.item-most-popular__red {
+.footer-popular__red {
   font-size: 15px;
   line-height: 22px;
   color: red;
