@@ -92,13 +92,13 @@ body {
   transition-duration: 0.5s;
 }
 
-.column__check-label {
+.information__check-label {
   flex: 0 1 325px;
   cursor: pointer;
   position: relative;
 }
 
-.column__check-input {
+.information__check-input {
   position: absolute;
   top: 0;
   left: 0;
@@ -107,7 +107,7 @@ body {
   opacity: 0;
 }
 
-.column__check-text {
+.information__check-text {
   display: inline-flex;
   align-items: center;
   gap: 12px;
