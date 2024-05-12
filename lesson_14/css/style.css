@@ -207,8 +207,9 @@ body {
   background: url("../img/main/delivery/section__img/checked.svg") center
     no-repeat;
 }
-.section__text img {
-  width: 100%;
+
+.section__img {
+  max-width: 100%;
 }
 
 .section__content {
