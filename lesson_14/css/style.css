@@ -122,6 +122,14 @@ body {
   border: 1px solid #d1d5d5;
 }
 
+.column__input:focus {
+  outline-color: #f9a11d;
+}
+
+.information__check-text:hover {
+  text-decoration: underline;
+}
+
 .information__check-input:checked + .information__check-text::before {
   background: url("../img/main/icon/arrow.check.svg") 0 0 / 100% no-repeat;
 }
@@ -187,6 +195,10 @@ body {
 }
 .section__label:hover {
   background-color: #e6e6e6;
+}
+
+.section__input:checked + .section__label {
+  border-color: #f9a11d;
 }
 
 .section__input:checked + .section__label img {
@@ -352,6 +364,12 @@ body {
   gap: 12px;
   font-size: 17px;
   line-height: 141.176471%; /* 24/17 */
+  transition-duration: 0.3s;
+}
+
+.payment__text:hover {
+  color: #f9a11d;
+  transition-duration: 0.3s;
 }
 
 .payment__text::before {
@@ -365,7 +383,7 @@ body {
 
 .payment__input:checked + .payment__text::before {
   background: url("../img/main/payment/Checked.svg") 0 0 / 100% no-repeat;
-  border: 0;
+  border: 2px solid #ffa115;
 }
 
 .coment {
@@ -391,7 +409,7 @@ body {
 }
 
 .coment__textarea {
-  width: 680px;
+  max-width: 680px;
   height: 150px;
   min-height: 90px;
   resize: vertical;
@@ -403,11 +421,11 @@ body {
 }
 
 .coment__textarea:focus {
-  outline: 1px solid #808080;
+  outline-color: #f9a11d;
 }
 
 .coment__textarea:hover {
-  border: 1px solid rgb(156, 156, 156);
+  border: 1px solid #f9a11d;
   transition-duration: 0.4s;
 }
 
