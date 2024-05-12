@@ -115,14 +115,14 @@ body {
   line-height: 187.5%; /* 30/16 */
 }
 
-.column__check-text::before {
+.information__check-text::before {
   content: "";
   width: 20px;
   height: 20px;
   border: 1px solid #d1d5d5;
 }
 
-.column__check-input:checked + .column__check-text::before {
+.information__check-input:checked + .information__check-text::before {
   background: url("../img/main/icon/arrow.check.svg") 0 0 / 100% no-repeat;
 }
 
