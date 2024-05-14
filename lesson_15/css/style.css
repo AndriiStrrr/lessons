@@ -185,7 +185,7 @@ body {
 
 @media (max-width: 460px) {
   .mid-header__catalog {
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     row-gap: 15px;
   }
