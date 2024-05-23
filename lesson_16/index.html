@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Підключення окремого файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Заголовок сторінки в браузері -->
+	<title>Lesson 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<div data-da=".burger-header__container, 991.98, 2" class="top-header__menu menu-top">
+						<ul class="menu-top__list">
+							<li>
+								<a class="menu-top__link" href="#">Про нас</a>
+							</li>
+							<li>
+								<a class="menu-top__link" href="#">Оплата</a>
+							</li>
+							<li>
+								<a class="menu-top__link" href="#">Доставка та збірка</a>
+							</li>
+							<li>
+								<a class="menu-top__link" href="#">Відгуки</a>
+							</li>
+							<li>
+								<a class="menu-top__link" href="#">Блог</a>
+							</li>
+							<li>
+								<a class="menu-top__link" href="#">Контакти</a>
+							</li>
+						</ul>
+					</div>
+					<div data-da=".burger-header__container, 991.98, 1" class="top-header__social social-top-menu">
+						<h3 class="social-top-menu__title">Допомога і консультація:</h3>
+						<ul class="social-top-menu__list">
+							<li>
+								<a href="#" target="_blank" class="social-top-menu__link social-top-menu__link--w">
+									<img src="img/social/social-whatsapp.svg" alt="#">
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" class="social-top-menu__link social-top-menu__link--t">
+									<img src="img/social/social-telegram.svg" alt="#">
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" class="social-top-menu__link social-top-menu__link--v">
+									<img src="img/social/social-viber.svg" alt="#">
+								</a>
+							</li>
+						</ul>
+						<div class="top-header__lang lang-top">
+							<div class="lang-top__label">UA</div>
+							<ul class="lang-top__list">
+								<li class="lang-top__item">
+									<a href="#" class="lang-top__link">EN</a>
+								</li>
+								<li class="lang-top__item">
+									<a href="#" class="lang-top__link">PL</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="header__mid mid-header">
+				<div class="mid-header__container">
+
+					<div class="mid-header__logo">
+						<img src="img/logo-header.svg" alt="#">
+					</div>
+					<button data-da=".adaptiv-header__container, 860" class="mid-header__btn">
+						<span>Каталог</span>
+					</button>
+					<form data-da=".adaptiv-header__container, 860" class="mid-header__search search-mid-header "
+						action="#">
+						<input class="search-mid-header__input" type="text" placeholder="Пошук товарів">
+						<button class="search-mid-header__button" type="submit"></button>
+					</form>
+
+					<div class="mid-header__contacts contacts-mid-header">
+						<a class="contacts-mid-header__icon" href="tel:0679294545">
+							<img src="img/mid/phone.svg" alt="#">
+						</a>
+						<button type="button" class="menu-icon">
+							<span></span>
+						</button>
+						<div class="contacts-mid-header__content">
+							<p class="contacts-mid-header__text">Щодня з 9:00 до 18:00</p>
+							<div class="contacts-mid-header__phones phones-mid-header">
+								<a href="tel:0679294545" class="phones-mid-header__tell">067 929-45-45</a>
+								<div class="phones-mid-header__box">
+									<ul class="phones-mid-header__list">
+										<li class="phones-mid-header__item">
+											<a class="phones-mid-header__link" href="tel:09796785425">097 967-85-45</a>
+										</li>
+										<li class="phones-mid-header__item">
+											<a class="phones-mid-header__link" href="tel:0989295949">098 929-59-49</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- <div class="phones-mid-header__arrow">
+								<img src="img/mid/arrow-down.svg" alt="#">
+							</div> -->
+						</div>
+					</div>
+					<div data-da=".adaptiv-header__container, 860" class="mid-header__actions ">
+						<a href="#" class="mid-header__button mid-header__button--search">
+							<img src="img/mid/search-btn.svg" alt="#">
+						</a>
+						<a href="#" class="mid-header__button mid-header__button--favorite">
+							<img src="img/mid/favorite.svg" alt="#">
+						</a>
+						<a href="#" class="mid-header__button mid-header__button--cart">
+							<img src="img/mid/cart.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__adaptiv adaptiv-header">
+				<div class="adaptiv-header__container"></div>
+			</div>
+			<div class="header__bottom bottom-header">
+				<div class="bottom-header__container">
+					<div data-da=".burger-header__container, 991.98, 4" class="bottom-header__menu header-menu-left">
+						<ul class="header-menu-left__list">
+							<li class="header-menu-left__item">
+								<a href="#" class="header-menu-left__link header-menu-left__link--star">Акції</a>
+							</li>
+							<li class="header-menu-left__item">
+								<a href="#" class="header-menu-left__link header-menu-left__link--sale">Розпродаж</a>
+							</li>
+							<li class="header-menu-left__item">
+								<a href="#" class="header-menu-left__link header-menu-left__link--credit">Купити в
+									кредит</a>
+							</li>
+
+						</ul>
+					</div>
+					<div data-da=".burger-header__container, 991.98, 2" class="bottom-header__menu header-menu-right">
+						<ul class="header-menu-right__list">
+							<li class="header-menu-right__item">
+								<a href="#" class="header-menu-right__link">Дитяча</a>
+							</li>
+							<li class="header-menu-right__item">
+								<a href="#" class="header-menu-right__link">Кухня</a>
+							</li>
+							<li class="header-menu-right__item">
+								<a href="#" class="header-menu-right__link">Ванна</a>
+							</li>
+							<li class="header-menu-right__item">
+								<a href="#" class="header-menu-right__link">Спальня</a>
+							</li>
+							<li class="header-menu-right__item">
+								<a href="#" class="header-menu-right__link">Передпокій</a>
+							</li>
+							<li class="header-menu-right__item">
+								<a href="#" class="header-menu-right__link">Вітальня</a>
+							</li>
+							<li class="header-menu-right__item">
+								<a href="#" class="header-menu-right__link">Офіс</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header__burger burger-header">
+				<div class="burger-header__container">
+
+				</div>
+			</div>
+		</header>
+	</div>
+	<script src="js/script.js"></script>
+	<script src="js/dynamic_adapt.js"></script>
+</body>
+
+</html>
