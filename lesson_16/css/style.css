@@ -570,6 +570,11 @@ body {
   flex-shrink: 0;
   flex-basis: 400px;
 }
+@media (min-width: 1170px) {
+  .header-menu-left {
+    flex-basis: 430px;
+  }
+}
 @media (max-width: 991.98px) {
   .header-menu-left {
     flex-basis: auto;
@@ -623,8 +628,9 @@ body {
   column-gap: 40px;
   row-gap: 10px;
   flex-wrap: wrap;
+  flex-grow: 0;
 }
-@media (max-width: 1258px) {
+@media (max-width: 1170px) {
   .header-menu-right__list {
     column-gap: 20px;
   }
