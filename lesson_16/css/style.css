@@ -565,11 +565,21 @@ body {
   font-weight: 600;
 }
 
+.header-menu-left {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 400px;
+}
+@media (max-width: 991.98px) {
+  .header-menu-left {
+    flex-basis: auto;
+  }
+}
 .header-menu-left__list {
   display: flex;
   align-items: center;
   column-gap: 40px;
-  row-gap: 5px;
+  row-gap: 10px;
   flex-wrap: wrap;
 }
 @media (max-width: 1170px) {
