@@ -221,6 +221,7 @@ body {
   top: 100%;
   opacity: 1;
   pointer-events: all;
+  z-index: 3;
 }
 .lang-top__label {
   display: flex;
