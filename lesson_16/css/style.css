@@ -127,6 +127,11 @@ body {
     align-items: flex-start;
   }
 }
+@media (max-width: 991.98px) {
+  .top-header__menu {
+    order: 2;
+  }
+}
 .top-header__social {
   display: flex;
   align-items: center;
@@ -137,6 +142,7 @@ body {
   .top-header__social {
     flex-direction: column;
     row-gap: 10px;
+    order: 1;
   }
 }
 .menu-top__list {
@@ -198,18 +204,24 @@ body {
   height: 30px;
   transition-duration: 0.3s;
 }
+.social-top-menu__link img {
+  width: 18px;
+  height: 18px;
+  aspect-ratio: 30/30;
+  object-fit: cover;
+}
 @media (any-hover: hover) {
   .social-top-menu__link:hover {
     transform: scale(1.05);
   }
 }
-.social-top-menu__link--w {
+.social-top-menu__link--green {
   background-color: #75b73b;
 }
-.social-top-menu__link--t {
+.social-top-menu__link--blue {
   background-color: #40b3e0;
 }
-.social-top-menu__link--v {
+.social-top-menu__link--purple {
   background-color: #6f3faa;
 }
 
@@ -436,6 +448,7 @@ body {
   column-gap: 10px;
 }
 .contacts-mid-header__icon {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,10 +457,12 @@ body {
   height: 50px;
   border-radius: 50%;
   background-color: #fbfbfb;
+  z-index: 3;
 }
 .contacts-mid-header__content {
   position: relative;
   padding-right: 20px;
+  z-index: 2;
 }
 @media (max-width: 991.98px) {
   .contacts-mid-header__content {
@@ -469,38 +484,71 @@ body {
   font-weight: 300;
   margin-bottom: 5px;
 }
-.phones-mid-header:hover .phones-mid-header__box {
-  top: 100%;
-  opacity: 1;
-  pointer-events: all;
+.phones-mid-header__popup {
+  position: absolute;
+  width: 105%;
+  height: 160px;
+  overflow: hidden;
+  top: -5%;
+  left: -1%;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px #000;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
 }
+@media (max-width: 991.98px) {
+  .phones-mid-header__popup {
+    width: 180px;
+    height: 200px;
+    overflow: auto;
+    top: 0%;
+    left: -140%;
+  }
+}
+
+.popup-phones__container {
+  padding-top: 55px;
+  padding-bottom: 10px;
+}
+@media (max-width: 991.98px) {
+  .popup-phones__container {
+    padding: 55px 10px 10px 10px;
+  }
+}
+.popup-phones .popup-phones__list {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  row-gap: 15px;
+  padding-right: 15px;
+}
+.popup-phones .popup-phones__link {
+  font-size: 20px;
+  font-weight: 600;
+}
+@media (any-hover: hover) {
+  .popup-phones .popup-phones__link:hover {
+    text-decoration: underline;
+  }
+}
+
+.popup-phones .phones-mid-header__popup {
+  top: -5%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-phones .contacts-mid-header__icon {
+  background-color: #ececec;
+}
+
 .phones-mid-header__tell {
   color: #2b2929;
   font-size: 20px;
   font-weight: 600;
-}
-.phones-mid-header__box {
-  position: absolute;
-  top: 120%;
-  left: 0;
-  padding-top: 8px;
-  opacity: 0;
-  pointer-events: none;
-  transition-duration: 0.3s;
-}
-.phones-mid-header__list {
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 1px 1px 5px #000;
-}
-.phones-mid-header__item:not(:last-child) {
-  margin-bottom: 5px;
-}
-@media (any-hover: hover) {
-  .phones-mid-header__link:hover {
-    text-decoration: underline;
-  }
 }
 
 @media (max-width: 991.98px) {
@@ -549,6 +597,7 @@ body {
 @media (max-width: 991.98px) {
   .header-menu-left {
     flex-basis: auto;
+    order: 4;
   }
 }
 .header-menu-left__list {
@@ -593,9 +642,15 @@ body {
   background: url("../img/bottom/part.svg") left/24px no-repeat;
 }
 
+@media (max-width: 991.98px) {
+  .header-menu-right {
+    order: 3;
+  }
+}
 .header-menu-right__list {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   column-gap: 40px;
   row-gap: 10px;
   flex-wrap: wrap;
@@ -687,7 +742,7 @@ body {
   right: -100%;
   transition: all 0.5s;
   width: 100%;
-  height: 160px;
+  height: 175px;
   background-color: #fff;
   z-index: 2;
 }
@@ -703,7 +758,7 @@ body {
     z-index: 1;
     background-color: #fff;
     overflow: auto;
-    padding-top: 165px;
+    padding-top: 175px;
     padding-bottom: 20px;
   }
 }
@@ -732,6 +787,9 @@ body {
   }
 }
 
+.adaptiv-header {
+  padding: 12px 0;
+}
 .adaptiv-header__container {
   display: flex;
   justify-content: space-between;
