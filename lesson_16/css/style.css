@@ -441,7 +441,7 @@ body {
 }
 
 .contacts-mid-header {
-  z-index: 2;
+  z-index: 3;
   position: relative;
   display: flex;
   align-items: center;
@@ -508,6 +508,15 @@ body {
     left: -140%;
   }
 }
+@media (max-width: 767.98px) {
+  .phones-mid-header__popup {
+    width: 150px;
+    height: 200px;
+    overflow: auto;
+    top: 0%;
+    left: -100%;
+  }
+}
 
 .popup-phones__container {
   padding-top: 55px;
@@ -515,7 +524,12 @@ body {
 }
 @media (max-width: 991.98px) {
   .popup-phones__container {
-    padding: 55px 10px 10px 10px;
+    padding: 60px 10px 10px 10px;
+  }
+}
+@media (max-width: 767.98px) {
+  .popup-phones__container {
+    padding: 60px 5px 5px 10px;
   }
 }
 .popup-phones .popup-phones__list {
@@ -525,9 +539,40 @@ body {
   row-gap: 15px;
   padding-right: 15px;
 }
+@media (max-width: 991.98px) {
+  .popup-phones .popup-phones__list {
+    padding: 0;
+    align-items: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .popup-phones .popup-phones__list {
+    align-items: center;
+  }
+}
+.popup-phones .popup-phones__text {
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .popup-phones .popup-phones__text {
+    display: flex;
+    justify-content: center;
+    color: #535353;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .popup-phones .popup-phones__text:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 .popup-phones .popup-phones__link {
   font-size: 20px;
   font-weight: 600;
+}
+@media (max-width: 767.98px) {
+  .popup-phones .popup-phones__link {
+    font-size: 18px;
+  }
 }
 @media (any-hover: hover) {
   .popup-phones .popup-phones__link:hover {

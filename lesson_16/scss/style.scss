@@ -429,7 +429,7 @@ body {
   }
 }
 .contacts-mid-header {
-  z-index: 2;
+  z-index: 3;
   position: relative;
   display: flex;
   align-items: center;
@@ -511,6 +511,13 @@ body {
       top: 0%;
       left: -140%;
     }
+    @media (max-width: 767.98px) {
+      width: 150px;
+      height: 200px;
+      overflow: auto;
+      top: 0%;
+      left: -100%;
+    }
   }
 }
 .popup-phones {
@@ -520,7 +527,10 @@ body {
     padding-top: 55px;
     padding-bottom: 10px;
     @media (max-width: 991.98px) {
-      padding: 55px 10px 10px 10px;
+      padding: 60px 10px 10px 10px;
+    }
+    @media (max-width: 767.98px) {
+      padding: 60px 5px 5px 10px;
     }
   }
   .popup-phones {
@@ -532,9 +542,30 @@ body {
       flex-direction: column;
       row-gap: 15px;
       padding-right: 15px;
+      @media (max-width: 991.98px) {
+        padding: 0;
+        align-items: center;
+      }
+      @media (max-width: 767.98px) {
+        align-items: center;
+      }
     }
 
     // .popup-phones__item
+    &__text {
+      display: none;
+
+      @media (max-width: 991.98px) {
+        display: flex;
+        justify-content: center;
+        color: #535353;
+        font-size: 13px;
+        font-weight: 300;
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
 
     &__item {
     }
@@ -544,10 +575,9 @@ body {
     &__link {
       font-size: 20px;
       font-weight: 600;
-      // @media (max-width: 991.98px) {
-      //   font-weight: 400;
-      //   font-size: 18px;
-      // }
+      @media (max-width: 767.98px) {
+        font-size: 18px;
+      }
       @media (any-hover: hover) {
         &:hover {
           text-decoration: underline;
