@@ -143,9 +143,10 @@ body {
     width: 15px;
     height: 15px;
     flex-shrink: 0;
+    transition-duration: 0.3s;
     @media (any-hover: hover) {
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.3);
       }
     }
     img {
