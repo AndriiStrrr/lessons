@@ -714,12 +714,17 @@ body {
   background: url("../img/newsletter/filter.svg") center no-repeat;
 }
 
+.card-siction {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
 .card-siction:hover .card-siction__hover {
   opacity: 1;
   transform: translateY(0);
 }
 .card-siction__img {
-  margin-bottom: 18px;
+  position: relative;
   aspect-ratio: 310/400;
 }
 .card-siction__img img {
@@ -732,7 +737,7 @@ body {
   height: 12%;
   background-color: #1e2832;
   position: absolute;
-  bottom: 68px;
+  bottom: 0;
   left: 0;
   display: flex;
   align-items: center;
@@ -743,7 +748,7 @@ body {
   transition-duration: 0.3s;
 }
 .card-siction__title {
-  margin-bottom: 18px;
+  flex-grow: 1;
 }
 .card-siction__info {
   display: flex;
