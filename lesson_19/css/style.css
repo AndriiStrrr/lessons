@@ -748,6 +748,7 @@ body {
 .card-siction__info {
   display: flex;
   justify-content: space-between;
+  column-gap: 10px;
 }
 .card-siction__name {
   color: rgba(0, 0, 0, 0.5);

@@ -762,6 +762,7 @@ body {
   &__info {
     display: flex;
     justify-content: space-between;
+    column-gap: 10px;
   }
 
   // .card-newsletter__name
@@ -804,6 +805,7 @@ body {
     color: var(--Primary, #ff6f61);
   }
 }
+
 .title {
   @include adaptiveValue("font-size", 50, 35);
   font-weight: 500;
