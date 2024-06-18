@@ -54,13 +54,11 @@ body {
     color: aqua;
   }
 }
-.page {
-}
+
 .homework {
   background-color: beige;
   position: relative;
   padding: 1.25rem;
-
   // .homework__container
 
   &__container {
@@ -87,15 +85,20 @@ body {
   &__title {
     font-size: 1.5rem;
     font-weight: 700;
-    // margin-bottom: 0.625rem;
+  }
+
+  // .block-homework__task
+
+  &__task {
   }
 
   // .block-homework__list
 
   &__list {
   }
-
-  // .block-homework__text
+}
+.task-block {
+  // .task-block__text
 
   &__text {
     color: blue;
@@ -104,22 +107,26 @@ body {
       font-weight: 600;
     }
   }
-}
-.list-homework {
-  // .list-homework__title
+
+  // .task-block__title
 
   &__title {
     font-weight: 600;
   }
 
+  // .task-block__list
+
+  &__list {
+  }
+}
+.list-homework {
+  // .list-homework__title
+
+  &__title {
+  }
+
   // .list-homework__item
 
   &__item {
-  }
-}
-.footer {
-  // .footer__content
-
-  &__content {
   }
 }

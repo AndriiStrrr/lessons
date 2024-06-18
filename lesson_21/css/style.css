@@ -127,14 +127,13 @@ textarea {
   font-size: 1.5rem;
   font-weight: 700;
 }
-.block-homework__text {
+.task-block__text {
   color: blue;
 }
-.block-homework__text span {
+.task-block__text span {
   color: crimson;
   font-weight: 600;
 }
-
-.list-homework__title {
+.task-block__title {
   font-weight: 600;
 }
