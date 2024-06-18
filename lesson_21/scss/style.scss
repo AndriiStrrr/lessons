@@ -130,3 +130,14 @@ body {
   &__item {
   }
 }
+
+.footer {
+  // .footer__content
+
+  &__content {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: aquamarine;
+    text-align: center;
+  }
+}

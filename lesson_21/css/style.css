@@ -137,3 +137,9 @@ textarea {
 .task-block__title {
   font-weight: 600;
 }
+.footer__content {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: aquamarine;
+  text-align: center;
+}
