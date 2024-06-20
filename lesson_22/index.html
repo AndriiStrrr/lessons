@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 21</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__title">lesson-21</h1>
+            </div>
+        </header>
+        <main class="page">
+            <div class="homework">
+                <div class="homework__container">
+                    <section class="homework__block block-homework">
+                        <h2 class="block-homework__title">Задача №1</h2>
+                        <div class="block-homework__task task-block">
+                            <h3 class="task-block__title">Що потрапить в консоль?</h3>
+                            <ul class="block-homework__list list-homework">
+                                <li class="list-homework__item">let someVar = 0;</li>
+                                <li class="list-homework__item">++someVar;</li>
+                                <li class="list-homework__item">if (someVar) { console.log(someVar);
+                                    }</li>
+                            </ul>
+                            <div class="task-block__text">
+                                Відповідь: Оскільки в цьому випадку інкримент (++) збільшує змінну на 1. Відповідно 0
+                                збільшуємо на 1 отримуємо 1.
+                            </div>
+                        </div>
+                    </section>
+                    <section class="homework__block block-homework">
+                        <h2 class="block-homework__title">Задача №2</h2>
+                        <div class="block-homework__task task-block">
+                            <h3 class="task-block__title">За допомогою циклу FOR виведіть в консоль 10 рядків:
+                            </h3>
+                            <ul class="block-homework__list list-homework">
+                                <li class="list-homework__item">Пункт №1 </li>
+                                <li class="list-homework__item">Пункт №2</li>
+                            </ul>
+
+                            <div class="task-block__text">
+                                Відповідь в консолі
+                            </div>
+                        </div>
+                    </section>
+                    <section class="homework__block block-homework">
+                        <h2 class="block-homework__title">Задача №3</h2>
+                        <div class="block-homework__task  task-block">
+                            <h3 class="task-block__title">Що потрапить в консоль??
+                            </h3>
+                            <ul class=" task-block__list list-homework">
+                                <li class="list-homework__item">if (2 * 20 <= 10 || 30 / 2 < 5 && 10 <="10" || 20==="20"
+                                        ) { console.log('000'); } </li>
+                            </ul>
+                            <div class="task-block__text">
+                                Відповідь: в консоль не потрапить нічого, оскільки в умові присутній логічний опертор
+                                (&& - "та") він має більший пріоретет між логічними операторами і повертає
+                                <span>true</span> лише тоді коли два
+                                значення будуть <span>true</span>. В нашому випадку 15 < 5 це брехня і дія на цьому
+                                    етапі завершується. </div>
+                            </div>
+                    </section>
+                    <section class="homework__block block-homework">
+                        <h2 class="block-homework__title">Задача №4</h2>
+                        <div class="block-homework__task  task-block">
+                            <h3 class="task-block__title">Створіть функцію, яка повертає результат ділення числа a на
+                                число b з додаванням рядка "Результат ділення: "
+                                Викличте функцію передаючі різні значення, у тому числі не передаючи зовсім.
+                                Функція не має повертати NaN, Infinite або помилку
+                            </h3>
+                            <div class="task-block__text">
+                                Відповідь в консолі
+                            </div>
+                        </div>
+                    </section>
+                    <section class="homework__block block-homework">
+                        <h2 class="block-homework__title">Задача №5</h2>
+                        <div class="block-homework__task  task-block">
+                            <h3 class="task-block__title">Створіть масив даних - 5 елементів, один з яких число 10
+                                Обробіть масив за допомогою методу перебору
+                                Перевіряйте елемент на відповідність числу 10, та у разі відповідності, виводьте в
+                                консоль
+                            </h3>
+                            <div class="task-block__text">
+                                Відповідь в консолі
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class=" footer">
+            <div class="footer__content">
+                <h3>FOOTER</h3>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+
+</html>

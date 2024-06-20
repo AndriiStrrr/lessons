@@ -1,0 +1,143 @@
+@use "sass:math";
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:regular&display=swap");
+@import "_mixins.scss";
+@import "_reset.scss";
+// @import "_fonts.scss";
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1303;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+body {
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1303px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.page {
+}
+.header {
+  background-color: gray;
+  // .header__container
+
+  &__container {
+    padding: 0.625rem;
+  }
+
+  // .header__title
+
+  &__title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: aqua;
+  }
+}
+
+.homework {
+  background-color: beige;
+  position: relative;
+  padding: 1.25rem;
+  // .homework__container
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  // .homework__block
+
+  &__block {
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.625rem;
+    border: 2px solid #000;
+    border-radius: 0.5rem;
+    padding: 20px;
+  }
+}
+.block-homework {
+  // .block-homework__title
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  // .block-homework__task
+
+  &__task {
+  }
+
+  // .block-homework__list
+
+  &__list {
+  }
+}
+.task-block {
+  // .task-block__text
+
+  &__text {
+    color: blue;
+    span {
+      color: crimson;
+      font-weight: 600;
+    }
+  }
+
+  // .task-block__title
+
+  &__title {
+    font-weight: 600;
+  }
+
+  // .task-block__list
+
+  &__list {
+  }
+}
+.list-homework {
+  // .list-homework__title
+
+  &__title {
+  }
+
+  // .list-homework__item
+
+  &__item {
+  }
+}
+
+.footer {
+  // .footer__content
+
+  &__content {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: aquamarine;
+    text-align: center;
+  }
+}
