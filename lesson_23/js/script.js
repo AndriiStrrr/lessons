@@ -11,17 +11,12 @@ console.log(bodyElement);
 // Написати функцію, яка додає в <body> список UL
 // з певною кількістю LI (кількість має передаватись як параметр функції, також мати значення за замовченням)
 function addListToBody(numItems = 3) {
-  // Створюємо елемент <ul>
   const list = document.createElement("ul");
-
-  // Додаємо в <ul> вказану кількість елементів <li>
   for (let i = 1; i <= numItems; ++i) {
     const item = document.createElement("li");
     item.textContent = `item`;
     list.prepend(item);
   }
-
-  // Додаємо <ul> з елементами <li> до тіла сторінки
   document.body.prepend(list);
 }
 addListToBody();
